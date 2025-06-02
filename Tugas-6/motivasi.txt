@@ -1,0 +1,1 @@
+Saya sudah mempelajari dasar-dasar Laravel secara otodidak, namun merasa butuh bimbingan terstruktur dan studi kasus nyata agar pemahaman saya semakin matang. Saya berharap dengan mengikuti bootcamp ini, saya bisa memperkuat praktik coding saya, memahami best practice Laravel, serta membangun proyek akhir yang bisa saya jadikan portofolio.
