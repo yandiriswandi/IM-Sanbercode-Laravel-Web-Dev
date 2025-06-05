@@ -62,13 +62,13 @@
             $reversed .= $string[$i];
         }
 
-        echo $reversed . "<br>";
+        return $reversed;
     }
 
     // Hapus komentar di bawah ini untuk jalankan Code
-    reverseString("nama peserta");
-    reverseString("Sanbercode");
-    reverseString("We Are Sanbers Developers");
+    echo reverseString("nama peserta") . "<br>";
+    echo reverseString("Sanbercode") . "<br>";
+    echo reverseString("We Are Sanbers Developers") . "<br>";
 
     echo "<br>";
 
@@ -89,29 +89,14 @@
 
 
     // Code function di sini
-// Fungsi untuk membalik string secara manual (tanpa strrev)
-    function reverseStringForCheck($string)
-    {
-        $reversed = '';
-        $length = strlen($string);
-        for ($i = $length - 1; $i >= 0; $i--) {
-            $reversed .= $string[$i];
-        }
-        return $reversed;
-    }
-
+    
     // Fungsi untuk mengecek apakah sebuah string adalah palindrome
     function palindrome($string)
     {
-        $reversed = reverseStringForCheck($string);
+        $reversed = reverseString($string);
 
-        if ($string === $reversed) {
-            echo "true<br>";
-            return true;
-        } else {
-            echo "false<br>";
-            return false;
-        }
+        echo $string === $reversed ? "$string => true <br>" : "$string => false <br>";
+
     }
 
     // Hapus komentar di bawah ini untuk jalankan code

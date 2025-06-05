@@ -80,14 +80,16 @@ Output:
 
     // Lakukan Looping Di Sini
     
-    echo "LOOPING PERTAMA\n";
+    echo "LOOPING PERTAMA <br>";
 
     for ($i = 2; $i <= 20; $i += 2) {
-        echo "$i - I Love PHP\n";
+        echo "$i - I Love PHP <br>";
     }
+    echo "<br>";
+    echo "LOOPING KEDUA <br>";
 
     for ($i = 20; $i >= 2; $i -= 2) {
-        echo "$i - I Love PHP\n";
+        echo "$i - I Love PHP <br>";
     }
 
     echo "<h3>Soal No 2 Looping Array Modulo </h3>";
@@ -123,6 +125,7 @@ Output:
     print_r($rest);
 
     echo "<br>";
+    
     echo "<h3> Soal No 3 Looping Asociative Array </h3>";
 
     /* 
@@ -161,11 +164,7 @@ Output:
 
     ];
 
-
-
     // Output: 
-    $newItems = [];
-
     foreach ($items as $item) {
         $assocItem = [
             'id' => $item[0],
@@ -175,15 +174,12 @@ Output:
             'source' => $item[4]
         ];
 
-        // Tambahkan ke array baru
-        $newItems[] = $assocItem;
+        // Langsung tampilkan
+        echo '<pre>';
+        print_r($assocItem);
+        echo '</pre><br>';
     }
 
-    // Output: Tampilkan isi $newItems
-    foreach ($newItems as $data) {
-        print_r($data);
-        echo "<br><br>";
-    }
     echo "<h3>Soal No 4 Asterix </h3>";
 
     /* 
