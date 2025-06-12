@@ -1,10 +1,9 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
-</head>
-<body style="padding: 20px;">
+@extends('layouts.layout')
+
+@section('title')
+    Register
+@endsection
+@section('content')
     <h1>Buat Account Baru!</h1>
     <h3>Sign Up Form</h3>
     <form action="/welcome" method="POST">
@@ -36,10 +35,10 @@
         <div style="margin-bottom: 20px;">
             <label>Nationality :</label>
             <div style="margin-top: 10px;">
-              <select name="" id="">
-                <option value="Indonesia">Indonesia</option>
-                <option value="Malaysia">Malaysia</option>
-              </select>
+                <select name="" id="">
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Malaysia">Malaysia</option>
+                </select>
             </div>
         </div>
         <div style="margin-bottom: 20px;">
@@ -62,5 +61,4 @@
         </div>
         <button type="submit">Sign Up</button>
     </form>
-</body>
-</html>
+@endsection

@@ -1,10 +1,10 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body style="padding: 20px;">
+@extends('layouts.layout')
+@section('title')
+    Home
+@endsection
+
+@section('content')
+
     <h1 style="font-weight: bold;">SanberBook</h1>
     <h2>Social Media Developer Snatai Berkualitas</h2>
     <span>Belajar dan berbagi agar hidup ini semakin santai berkualitas</span>
@@ -24,5 +24,4 @@
             <li>Selesai!</li>
         </ol>
     </div>
-</body>
-</html>
+@endsection
